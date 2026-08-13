@@ -309,13 +309,13 @@ body, html {
    ========================= */
 
 @media (max-width: 600px) {
-
-  html,
-  body {
+  body.room-page {
     width: 100%;
-    min-height: 100%;
+    height: 100vh;
+    min-height: 600px;
     overflow: hidden;
   }
+}
 
   body.room-page {
     width: 100%;
