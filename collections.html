@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collection | Stickers for Dreams</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    background: linear-gradient(
+        to top,
+        #8A6A58 0%,
+        #E6DCCF 45%,
+        #F3EFE7 100%
+    );
+    color: #302722;
+}
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            width: 100%;
+            padding: 25px 55px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: rgba(107, 81, 68, 0.90);
+            border-bottom: 1px solid rgba(181, 150, 90, 0.25);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #F3EFE7;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #F3EFE7;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #B5965A;
+        }
+
+        /* ---------- MAIN ---------- */
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #302722;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            color: #806F63;
+            margin-bottom: 50px;
+        }
+
+        /* ---------- COLLECTION GRID ---------- */
+
+        .collection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            height: 280px;
+            border-radius: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+
+            text-decoration: none;
+
+            box-shadow: 0 10px 25px rgba(48, 39, 34, 0.15);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 30px rgba(48, 39, 34, 0.22);
+        }
+
+        /* ---------- CARD BACKGROUNDS ---------- */
+
+        .flowers {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+        url("flowers.jpg") center/cover;
+}
+
+.books {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+        url("books.jpg") center/cover;
+}
+
+.space {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+        url("space.jpg") center/cover;
+}
+
+.music {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+        url("music.jpg") center/cover;
+}
+
+        /* ---------- CARD TEXT ---------- */
+
+        .card-content {
+            color: white;
+            text-align: center;
+            z-index: 2;
+
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        }
+
+        .card-content h2 {
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 15px;
+            opacity: 0.95;
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #806F63;
+            font-size: 14px;
+        }
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+            .title {
+                font-size: 38px;
+            }
+
+            .collection {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                height: 230px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Stickers for Dreams
+        </div>
+
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="collections.html">Collection</a>
+            <a href="index.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <h1 class="title">
+            Collection
+        </h1>
+
+        <p class="subtitle">
+            Little collections made for every kind of dream.
+        </p>
+
+
+        <div class="collection">
+
+            <!-- FLOWERS -->
+
+            <a href="flower.html" class="card flowers">
+
+                <div class="card-content">
+
+                    <h2>Flowers & Nature</h2>
+
+                    <p>
+                        Little blooms, colors & sunshine
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- BOOKS & COFFEES -->
+
+            <a href="books.html" class="card books">
+
+                <div class="card-content">
+
+                    <h2>Books & Coffees</h2>
+
+                    <p>
+                        For quiet mornings and cozy pages
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- SPACE & STARS -->
+
+            <a href="space.html" class="card space">
+
+                <div class="card-content">
+
+                    <h2>Space & Stars</h2>
+
+                    <p>
+                        A little universe of dreams
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- MUSIC -->
+
+            <a href="music.html" class="card music">
+
+                <div class="card-content">
+
+                    <h2>Music</h2>
+
+                    <p>
+                        Songs, melodies & little moments
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Stickers for Dreams ♡
+
+    </footer>
+
+</body>
+</html>
