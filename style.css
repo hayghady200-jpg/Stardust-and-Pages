@@ -208,6 +208,20 @@ body.room-page {
 
 }
 
+@media (max-width: 600px) {
+
+  .card h2 {
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+    line-height: 1.25;
+    text-align: center;
+    white-space: normal;
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
 /* Bottom Floating Bar */
 .bottom-nav {
   position: fixed;
