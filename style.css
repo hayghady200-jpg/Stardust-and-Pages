@@ -166,46 +166,6 @@ body.room-page {
 .card-icon { font-size: 2.2rem; }
 .card h2 { font-family: var(--font-serif); font-size: 0.85rem; letter-spacing: 1.5px; text-align: center; }
 .explore-btn { color: #f0e2d0; font-size: 0.75rem; display: flex; align-items: center; gap: 6px; }
-
-@media (max-width: 600px) {
-
-  /* Category Cards */
-  .cards-container {
-    bottom: 55px;
-    width: 100%;
-    max-width: none;
-    padding: 0 12px;
-    gap: 8px;
-  }
-
-  .card {
-    width: calc((100vw - 40px) / 3);
-    max-width: 160px;
-    height: 125px;
-    padding: 10px 6px;
-    border-radius: 18px;
-  }
-
-  .card-icon {
-    font-size: 1.7rem;
-  }
-
-  /* نفس حجم الكلام في الكروت الثلاثة */
-  .card h2 {
-    font-size: 0.65rem;
-    letter-spacing: 0.5px;
-    line-height: 1.25;
-    text-align: center;
-    white-space: normal;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .explore-btn {
-    font-size: 0.6rem;
-    gap: 4px;
-  }
-
 }
 
 @media (max-width: 600px) {
