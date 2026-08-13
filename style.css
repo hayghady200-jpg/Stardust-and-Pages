@@ -1354,6 +1354,35 @@ body.book-page .book-page-like-btn.active i.fa-solid {
   opacity: 0.9;
 }
 
+@media (max-width: 600px) {
+
+  .flower-page-brand-title {
+    top: 15px;
+    right: 15px;
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .flower-page-header {
+    padding-top: 95px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .flower-page-main-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .flower-page-subtitle {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+}
+
 /* Stickers Grid Layout */
 .flower-page-stickers-grid {
   display: grid;
