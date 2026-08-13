@@ -239,13 +239,13 @@ body.room-page {
    ========================= */
 
 @media (max-width: 600px) {
-
-  html,
-  body {
+  body.room-page {
     width: 100%;
-    min-height: 100%;
+    height: 100vh;
+    min-height: 600px;
     overflow: hidden;
   }
+}
 
   body.room-page {
     width: 100%;
@@ -1371,7 +1371,7 @@ body.book-page .book-page-like-btn.active i.fa-solid {
 /* Header Section */
 .flower-page-header {
   text-align: center;
-  margin-top: 55px;
+  margin-top: 35px;
   margin-bottom: 40px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -1439,28 +1439,6 @@ body.book-page .book-page-like-btn.active i.fa-solid {
   align-items: center;
   gap: 10px;
   width: 100%;
-}
-
-.flower-page-like-btn {
-  width: 40px;
-  height: 35px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-/* حالة التفعيل عند الضغط على القلب (ينور أحمر) */
-.flower-page-like-btn.flower-page-active {
-  background: #ff4b4b;
-  border-color: #ff4b4b;
-  color: #ffffff;
 }
 
 .flower-page-download-btn {
