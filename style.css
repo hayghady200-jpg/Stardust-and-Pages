@@ -152,6 +152,7 @@ body.room-page {
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* لضمان عدم خروج Padding عن أبعاد الكرت */
 }
 
 .card:hover {
@@ -163,23 +164,55 @@ body.room-page {
 .card-books { background: rgba(181, 126, 88, 0.85); }
 .card-flowers { background: rgba(108, 117, 95, 0.85); }
 
-.card-icon { font-size: 2.2rem; }
-.card h2 { font-family: var(--font-serif); font-size: 0.85rem; letter-spacing: 1.5px; text-align: center; }
-.explore-btn { color: #f0e2d0; font-size: 0.75rem; display: flex; align-items: center; gap: 6px; }
+.card-icon { 
+  font-size: 2.2rem; 
 }
 
+.card h2 { 
+  font-family: var(--font-serif); 
+  font-size: 0.85rem; 
+  letter-spacing: 1.5px; 
+  text-align: center; 
+  overflow-wrap: break-word; /* يمنع خروج الكلمات الطويلة خارج الكرت */
+}
+
+.explore-btn { 
+  color: #f0e2d0; 
+  font-size: 0.75rem; 
+  display: flex; 
+  align-items: center; 
+  gap: 6px; 
+}
+
+/* responsive design for mobile */
 @media (max-width: 600px) {
+  .cards-container {
+    gap: 12px; /* تقليل المسافة بين الكروت */
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 150px; /* تصغير عرض الكرت تناسباً مع الموبايل */
+    height: 150px; /* تصغير ارتفاع الكرت */
+    padding: 12px;
+  }
+
+  .card-icon {
+    font-size: 1.3rem; /* تصغير حجم الأيقونة لترك مساحة أكبر للنص */
+  }
 
   .card h2 {
     font-size: 0.65rem;
     letter-spacing: 0.5px;
-    line-height: 1.25;
+    line-height: 1.2;
     text-align: center;
     white-space: normal;
-    width: 100%;
-    max-width: 100%;
+    word-break: break-word; /* يضمن كسر النص داخل الحدود */
   }
 
+  .explore-btn {
+    font-size: 0.65rem;
+  }
 }
 
 /* Bottom Floating Bar */
@@ -189,7 +222,7 @@ body.room-page {
   left: 50%;
   transform: translateX(-50%);
   background: #ecdac5;
-  padding: 10px 35px;
+  padding: 15px 35px;
   border-radius: 40px;
   display: flex;
   gap: 30px;
@@ -397,8 +430,8 @@ body.room-page {
 }
 
 .card {
-  width: 160px;
-  height: 130px;
+  width: 150px;
+  height: auto;
   border-radius: 20px;
   padding: 15px;
   display: flex;
@@ -1298,7 +1331,6 @@ body.book-page .book-page-nav-item.active {
     }
     
     body.book-page .book-page-nav {
-        flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
