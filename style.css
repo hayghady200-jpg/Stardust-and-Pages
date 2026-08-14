@@ -1037,31 +1037,6 @@ body.space-page .space-btn-download:hover {
     background: rgba(255, 255, 255, 0.3);
 }
 
-body.space-page .space-btn-fav {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-}
-
-body.space-page .space-btn-fav:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-body.space-page .space-btn-fav.active {
-    color: #ff4081;
-}
-
-body.space-page .space-btn-fav.active i {
-    font-weight: 900;
-}
 
 @media (max-width: 992px) {
     body.space-page .space-grid-container {
@@ -1236,24 +1211,6 @@ body.book-page .book-page-card-actions {
     margin-top: 10px;
 }
 
-/* Heart/Like Button */
-body.book-page .book-page-like-btn {
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    color: #f7e7c4;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-body.book-page .book-page-like-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    color: #ffffff;
 }
 /* Download Button */
 body.book-page .book-page-download-btn {
@@ -1334,16 +1291,6 @@ body.book-page .book-page-nav-item.active {
         justify-content: center;
         gap: 15px;
     }
-}
-/* تنسيق القلب عندما يكون مضافاً للمكتبة */
-body.book-page .book-page-like-btn.active i {
-    color: #ef2828 !important; /* لون أحمر زاهي */
-    font-weight: 900;
-}
-
-/* تحويل الأيقونة من مفرغة إلى ممتلئة */
-body.book-page .book-page-like-btn.active i.fa-solid {
-   color: #ff4d4d;
 }
 
 /* ==========================================
