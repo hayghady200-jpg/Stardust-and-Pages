@@ -471,7 +471,7 @@ body.room-page {
 .card h2 { 
   font-family: var(--font-serif); 
   font-size: 0.8rem; 
-  letter-spacing: 1.2px; 
+  letter-spacing: 0.8px; 
   text-align: center; 
 }
 
